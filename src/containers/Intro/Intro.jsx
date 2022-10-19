@@ -28,7 +28,7 @@ const Intro = () => {
             <img
                 className="intro__image"
                 src={profilePhoto}
-                alt="Profile Photo of Gavin Stirling"
+                alt="Profile of Gavin Stirling"
             />
         </div>
     );
