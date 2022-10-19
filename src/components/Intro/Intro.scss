@@ -1,0 +1,133 @@
+@use "../../assets/sass/mixins.scss" as *;
+@use "../../assets/sass/variables.scss" as *;
+
+.intro {
+    margin: 2.5em $margin $margin;
+
+    font-family: $primary-font;
+
+    &__left {
+        @include centerCard();
+    }
+
+    &__subtitle {
+        color: $secondary-font-colour;
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__emoji {
+        height: 1em;
+        width: 1em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $secondary-colour;
+        background-color: $primary-colour;
+        width: 35%;
+        height: 4em;
+        @include centerSelf();
+        border: 2px solid $secondary-colour;
+        border-radius: 0.25em;
+        box-shadow: 0.25em 0.25em $secondary-colour;
+        a:visited {
+            color: $secondary-colour;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        height: 95vh;
+        padding: 2em;
+
+        &__subtitle {
+            font-weight: 500;
+            margin-bottom: 2em;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__emoji {
+            display: none;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .intro {
+        width: 90%;
+        height: 35vh;
+
+        &__left {
+            justify-content: center;
+        }
+
+        &__subtitle {
+            @include centerSelf();
+            height: 5vh;
+            margin: 0.5em 0;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 2.25em;
+            margin: 0.5em 0;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .intro {
+        width: 85%;
+        height: 50vh;
+
+        margin: $margin;
+
+        @include rowBetween();
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+
+        &__image {
+            width: auto;
+            height: 90%;
+            margin: 1.5em 0;
+            border-radius: 2%;
+        }
+
+        &__subtitle {
+            height: 5vh;
+            margin: 0.5em 0;
+        }
+
+        &__title {
+            text-align: left;
+            font-size: 2.25em;
+            margin: 0.5em 0;
+            width: 80%;
+            font-weight: 600;
+        }
+    }
+}
