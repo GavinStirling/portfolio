@@ -1,0 +1,146 @@
+@use "../../assets/sass/mixins.scss" as *;
+@use "../../assets/sass/variables.scss" as *;
+
+.navigation {
+    width: 90%;
+    height: 10vh;
+
+    @include rowBetween();
+
+    padding: 0 $padding;
+
+    position: sticky;
+    top: 0;
+
+    font-family: $primary-font;
+    background-color: $primary-background;
+
+    a {
+        margin: 0 $margin;
+        text-decoration: none;
+        color: $secondary-font-colour;
+    }
+
+    a:visited {
+        color: $secondary-font-colour;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        height: 5vh;
+
+        margin: 0 0 $margin 0;
+        padding: $padding 0;
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__logo {
+            height: 2.5em;
+            width: 2.5em;
+            margin: 1em;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        &__title-tablet1 {
+            display: none;
+        }
+
+        &__title-tablet2 {
+            display: none;
+        }
+
+        &__menu {
+            margin: 1em;
+            width: 1em;
+            height: 1em;
+        }
+
+        &__links {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navigation {
+        &__logo {
+            display: none;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__title--tablet1 {
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+
+        &__title--tablet2 {
+            font-weight: 700;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__right {
+            @include rowEvenly();
+        }
+
+        &__links {
+            width: 80%;
+            font-family: $primary-font;
+            font-weight: 400;
+            color: $secondary-font-colour;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navigation {
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        &__logo {
+            margin: 0 0.5em;
+        }
+
+        &__title-tablet1 {
+            display: none;
+        }
+
+        &__title-tablet2 {
+            display: none;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__right {
+            @include rowEvenly();
+            width: 60%;
+        }
+
+        &__links {
+            width: 100%;
+            font-family: $primary-font;
+            font-weight: 400;
+            color: $secondary-font-colour;
+            @include rowEvenly();
+        }
+    }
+}
