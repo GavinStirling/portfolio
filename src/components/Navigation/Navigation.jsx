@@ -9,7 +9,7 @@ import navMenu from "../../assets/images/nav/nav-menu.png";
 const Navigation = () => {
     return (
         <div className="navigation">
-            <div className="navigation__left">
+            <NavLink to="/" className="navigation__left">
                 <img
                     className="navigation__logo"
                     src={navLogo}
@@ -18,7 +18,8 @@ const Navigation = () => {
                 <span className="navigation__title">Gavin Stirling</span>
                 <span className="navigation__title-tablet1">Gavin</span>
                 <span className="navigation__title-tablet2">Stirling</span>
-            </div>
+            </NavLink>
+
             <div className="navigation__right">
                 <img
                     className="navigation__menu"

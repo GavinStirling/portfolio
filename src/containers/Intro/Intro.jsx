@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import "./Intro.scss";
 
-import waveEmoji from "../../assets/images/home/Emoji.png";
-import profilePhoto from "../../assets/images/home/STIRLING-80.jpg";
+import waveEmoji from "../../assets/images/intro/Emoji.png";
+import profilePhoto from "../../assets/images/intro/STIRLING-80.jpg";
 
 const Intro = () => {
     return (
