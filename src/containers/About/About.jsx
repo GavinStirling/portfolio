@@ -24,7 +24,7 @@ const About = () => {
                     <h1 className="about__title--desktop">About Me</h1>
                     <p className="about__story">
                         Hi my name is Gavin Stirling and I am a Junior Software
-                        Developer training with _Nology in London.
+                        Developer based in London.
                         <br />
                         <br />I am originally from South Africa and have a
                         degree in Mechanical Engineering. I relocated to the UK
