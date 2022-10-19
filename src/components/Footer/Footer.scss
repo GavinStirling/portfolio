@@ -7,14 +7,12 @@
     background-color: $secondary-colour;
     font-family: $primary-font;
 
-    @include centerCard();
-    padding: 0.5em;
-
+    @include centerSelf();
+    flex-direction: column;
 
     &__links {
-        width: 100%;
         display: flex;
-        justify-content: center;
+        
     }
 
     &__link {
@@ -43,16 +41,8 @@
 
 @media screen and (min-width: 769px) {
     .footer {
-        height: 15vh;
-        padding: 0 2em 0;
-
+        @include rowEvenly();
         flex-direction: row-reverse;
-        justify-content: space-evenly;
-
-        &__links {
-            width: 25%;
-            justify-content: flex-end;
-        }
 
         a {
             margin: 0 0.5em;

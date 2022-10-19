@@ -1,0 +1,56 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.skills {
+    width: 100%;
+    margin: $margin 0;
+    text-align: center;
+
+    &__heading {
+        height: 5vh;
+        margin: 0.5em 0;
+
+        @include centerSelf();
+
+        color: $secondary-colour;
+        font-family: $primary-font;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills {
+        &__tiles {
+            display: grid;
+            justify-content: center;
+            gap: 1em;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        }
+
+        margin: 2em $margin;
+        text-align: center;
+
+        font-family: $primary-font;
+        color: $secondary-font-colour;
+        font-weight: 500;
+
+        &__intro {
+            display: none;
+        }
+
+        &__heading {
+            margin: 2.5em auto 0.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .skills {
+        &__tiles {
+            margin: 1em 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+}

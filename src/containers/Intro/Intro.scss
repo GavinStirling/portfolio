@@ -2,7 +2,7 @@
 @use "../../assets/sass/variables.scss" as *;
 
 .intro {
-    margin: 2.5em $margin $margin;
+
 
     font-family: $primary-font;
 
@@ -96,12 +96,12 @@
 
 @media screen and (min-width: 769px) {
     .intro {
-        width: 85%;
+        width: 100%;
         height: 50vh;
 
         margin: $margin;
 
-        @include rowBetween();
+        @include rowEvenly();
 
         &__left {
             display: flex;
