@@ -1,13 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import "./Home.scss";
-
-import Navigation from "../../components/Navigation/Navigation";
+import Navigation from '../../components/Navigation/Navigation'
+import Intro from '../Intro/Intro'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
-    return <div>
+  return (
+    <div>
         <Navigation />
-        Home</div>;
-};
+        <Intro />
+        <Footer />
+    </div>
+  )
+}
 
-export default Home;
+export default Home
