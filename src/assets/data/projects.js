@@ -64,7 +64,7 @@ const projectsArray = [
         name: "FX Tech Test",
         tech: "Java, Springboot",
         image: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/projects/techtest.png",
-        description: " The test was to build a piece of a RESTful API which was completed using Springboot. The objective of this code is to receive a CSV message which contains information relating to a FX price. This code reads in the message and creates a Price object which has commission applied to it and the it is stored in the PriceRepository. ",
+        description: " The test was to build a piece of a RESTful API which was completed using Springboot. The objective of this code is to receive a CSV message which contains information relating to a FX price. ",
         githubLink: "https://github.com/GavinStirling/santander-tech-test",
         deployedLink: "https://github.com/GavinStirling/santander-tech-test"
     }
