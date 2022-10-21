@@ -23,7 +23,7 @@ const About = () => {
                 <div className="about__left">
                     <h1 className="about__title--desktop">About Me</h1>
                     <p className="about__story">
-                        Hi my name is Gavin Stirling and I am a Junior Software
+                        Hi my name is Gavin Stirling and I am a Software
                         Developer based in London.
                         <br />
                         <br />I am originally from South Africa and have a
@@ -31,6 +31,9 @@ const About = () => {
                         with my Wife, Tania, in April of 2022. This was also
                         when I decided to make the change in career towards
                         Software Development.
+                        <br />
+                        <br />I enjoy problem solving and collaborating in a team.
+                        I enjoy building, flying (and crashing) FPV drones and playing sports.
                     </p>
                 </div>
                 <img
