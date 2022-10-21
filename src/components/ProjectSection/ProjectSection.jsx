@@ -22,16 +22,16 @@ const ProjectSection = () => {
     });
 
     return (
-        <div id="projects" className="projects">
-            <h1 className="projects__heading">My Projects:</h1>
-            <div className="projects__intro">
+        <div className="projectSection">
+            <h1 className="projectSection__heading">My Projects:</h1>
+            <div className="projectSection__intro">
                 <p>
                     Below are some of the projects which I have built. The code
                     can be found on my GitHub and they are all deployed as a
                     live website.
                 </p>
             </div>
-            <div className="projects__tiles">{ProjectJSX}</div>
+            <div className="projectSection__tiles">{ProjectJSX}</div>
         </div>
     );
 };
