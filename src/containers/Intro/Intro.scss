@@ -26,8 +26,9 @@
         text-decoration: none;
         color: $secondary-colour;
         background-color: $primary-colour;
-        width: 35%;
+        width: 60%;
         height: 4em;
+        padding: 1em;
         @include centerSelf();
         border: 2px solid $secondary-colour;
         border-radius: 0.25em;

@@ -22,7 +22,7 @@ const Intro = () => {
                     A Software Developer based in London.
                 </p>
                 <NavLink className="intro__link" to="/projects">
-                    Take a look at some of my work
+                    Take a look at some of my work...
                 </NavLink>
             </div>
             <img
