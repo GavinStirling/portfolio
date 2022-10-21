@@ -19,7 +19,7 @@ const Intro = () => {
                     />
                 </p>
                 <p className="intro__title">
-                    A Junior Software Developer based in London.
+                    A Software Developer based in London.
                 </p>
                 <NavLink className="intro__link" to="/projects">
                     Take a look at some of my work
