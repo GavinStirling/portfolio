@@ -1,0 +1,8 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

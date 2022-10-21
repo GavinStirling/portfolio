@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 
 const Projects = () => {
     return (
-        <div>
+        <div className="projects">
             <Navigation />
             <ProjectSection />
             <Footer />

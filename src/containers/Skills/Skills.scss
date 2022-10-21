@@ -2,9 +2,13 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .skills {
-    width: 100%;
+    width: 90%;
     margin: $margin 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__heading {
         height: 5vh;

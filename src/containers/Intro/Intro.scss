@@ -2,8 +2,7 @@
 @use "../../assets/sass/variables.scss" as *;
 
 .intro {
-
-
+    width: 90%;
     font-family: $primary-font;
 
     &__left {
@@ -27,8 +26,9 @@
         text-decoration: none;
         color: $secondary-colour;
         background-color: $primary-colour;
-        width: 35%;
+        width: 60%;
         height: 4em;
+        padding: 1em;
         @include centerSelf();
         border: 2px solid $secondary-colour;
         border-radius: 0.25em;
@@ -96,7 +96,7 @@
 
 @media screen and (min-width: 769px) {
     .intro {
-        width: 100%;
+        width: 90%;
         height: 50vh;
 
         margin: $margin;

@@ -1,17 +1,17 @@
 @use "../../assets/sass/variables.scss" as *;
 @use "../../assets/sass/mixins.scss" as *;
 
-.projects {
-    margin: $margin;
+.projectSection {
     font-family: $primary-font;
     width: 100%;
+    margin: $margin 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 @media screen and (max-width: 480px) {
-    .projects {
+    .projectSection {
         &__intro {
             display: none;
         }
@@ -19,7 +19,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .projects {
+    .projectSection {
         &__intro {
             display: none;
         }
@@ -27,7 +27,7 @@
 }
 
 @media screen and (min-width: 769px) {
-    .projects {
+    .projectSection {
 
         &__tiles {
             width: 90%;
