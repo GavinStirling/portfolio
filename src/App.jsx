@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 
 import Routing from "./containers/Routing/Routing";
 

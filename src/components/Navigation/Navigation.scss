@@ -2,7 +2,7 @@
 @use "../../assets/sass/variables.scss" as *;
 
 .navigation {
-    width: 100%;
+    width: 90%;
     height: 10vh;
 
     @include rowEvenly();
