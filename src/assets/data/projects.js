@@ -59,6 +59,14 @@ const projectsArray = [
         description: " Java command line project which simulates a card game. The first game interacts with a deck of cards, the second game is a one player version of snap and the third is a two player version of snap. ",
         githubLink: "https://github.com/GavinStirling/card-game",
         deployedLink: "https://github.com/GavinStirling/card-game"
+    },
+    {
+        name: "FX Tech Test",
+        tech: "Java, Springboot",
+        image: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/projects/techtest.png",
+        description: " The test was to build a piece of a RESTful API which was completed using Springboot. The objective of this code is to receive a CSV message which contains information relating to a FX price. This code reads in the message and creates a Price object which has commission applied to it and the it is stored in the PriceRepository. ",
+        githubLink: "https://github.com/GavinStirling/santander-tech-test",
+        deployedLink: "https://github.com/GavinStirling/santander-tech-test"
     }
 ];
 
