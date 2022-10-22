@@ -3,11 +3,17 @@
 
 .projectSection {
     font-family: $primary-font;
-    width: 100%;
+    width: 90%;
     margin: $margin 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__tiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -31,17 +37,20 @@
 
         &__tiles {
             width: 90%;
-            display: grid;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 1em;
-            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            gap: 2em 2em;
+            grid-template-columns: repeat(3, 2fr);
         }
 
         &__intro {
             display: block;
             margin: $margin 0;
             color: $secondary-font-colour;
-            width: 80%;
+            width: 90%;
             text-align: center;
         }
     }

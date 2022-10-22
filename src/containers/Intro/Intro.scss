@@ -37,6 +37,10 @@
             color: $secondary-colour;
         }
     }
+
+    &__link:hover {
+        opacity: 50%;
+    }
 }
 
 @media screen and (max-width: 480px) {
