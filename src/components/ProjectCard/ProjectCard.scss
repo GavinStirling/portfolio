@@ -2,10 +2,11 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .project {
-    height: 100%;
-    width: 90%;
+    height: 35em;
+    width: 20em;
 
     padding: 1em;
+    margin: $margin;
 
     border: 1px solid $secondary-colour;
     border-radius: 5%;
@@ -16,8 +17,8 @@
     justify-content: space-between;
 
     &__image {
-        height: 10em;
-        border-radius: 0.5em;
+        height: 7.5em;
+        border-radius: 0.75em;
     }
 
     &__tech {
@@ -55,14 +56,11 @@
             background-color: $primary-background;
             border: none;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
 
             text-decoration: none;
             color: $secondary-colour;
 
-            img {
-                margin-left: 1em;
-            }
         }
 
         a:visited {
