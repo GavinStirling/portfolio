@@ -13,8 +13,17 @@
     font-family: $primary-font;
     background-color: lightgray;
 
+    .link {
+        height: 10vh;
+        width: 100%;
+        @include centerSelf();
+    }
+
+    .link:hover {
+        background-color: gray;
+    }
+
     a {
-        margin: 0 $margin;
         text-decoration: none;
         color: $secondary-colour;
     }
@@ -95,8 +104,9 @@
         }
 
         &__links {
-            width: 50%;
+            width: 1em;
             font-family: $primary-font;
+            font-size: 1em;
             font-weight: 400;
             color: $secondary-font-colour;
         }

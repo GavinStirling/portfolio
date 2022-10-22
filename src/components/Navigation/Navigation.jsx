@@ -27,9 +27,9 @@ const Navigation = () => {
                     alt="Navigation Menu"
                 />
                 <div className="navigation__links">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/projects">Projects</NavLink>
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink className="link" to="/">Home</NavLink>
+                    <NavLink className="link" to="/projects">Projects</NavLink>
+                    <NavLink className="link" to="/about">About</NavLink>
                 </div>
             </div>
         </div>
