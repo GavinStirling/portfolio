@@ -36,14 +36,12 @@
     .projectSection {
 
         &__tiles {
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 2em 2em;
-            grid-template-columns: repeat(3, 2fr);
         }
 
         &__intro {
