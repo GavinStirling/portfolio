@@ -2,7 +2,7 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .project {
-    height: 35em;
+    height: 30em;
     width: 20em;
 
     padding: 1em;
@@ -35,8 +35,7 @@
     }
 
     &__description {
-        margin: 2em 0em;
-        width: 80%;
+        width: 90%;
         color: $secondary-font-colour;
         text-align: left;
     }
@@ -57,14 +56,16 @@
             border: none;
             display: flex;
             justify-content: center;
-
             text-decoration: none;
             color: $secondary-colour;
-
         }
 
         a:visited {
             color: $secondary-colour;
         }
+    }
+
+    a:hover {
+        opacity: 50%;
     }
 }
