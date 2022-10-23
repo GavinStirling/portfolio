@@ -100,15 +100,17 @@
         }
 
         &__right {
-            @include rowEvenly();
+            width: 50%;
         }
 
         &__links {
-            width: 1em;
+            //width: 1em;
             font-family: $primary-font;
             font-size: 1em;
             font-weight: 400;
             color: $secondary-font-colour;
+            display: flex;
+            justify-content: space-evenly;
         }
     }
 }
