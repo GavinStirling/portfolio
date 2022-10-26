@@ -61,6 +61,14 @@ const projectsArray = [
         deployedLink: "https://github.com/GavinStirling/card-game"
     },
     {
+        name: "Greetings API",
+        tech: "Java, Springboot",
+        image: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/projects/greetingapi.png",
+        description: " This is a RESTful API which is built using Springboot. The API creates, reads, updates and deletes greetings and communicates with a database. ",
+        githubLink: "https://github.com/GavinStirling/greetingAPI",
+        deployedLink: "https://github.com/GavinStirling/greetingAPI"
+    },
+    {
         name: "FX Tech Test",
         tech: "Java, Springboot",
         image: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/projects/techtest.png",
